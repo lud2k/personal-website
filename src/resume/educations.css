@@ -1,0 +1,44 @@
+
+.educations {
+
+}
+
+.education {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.educationDate {
+    position: absolute;
+    border: 1px solid #444;
+    border-right: 0;
+    right: 100%;
+    padding: 2px 4px 2px 10px;
+    top: 2px;
+    background: #f9f9f9;
+    margin-right: 20px;
+    line-height: 20px;
+    height: 20px;
+    white-space: nowrap;
+}
+
+.educationDate svg {
+    position: absolute;
+    right: -15px;
+    top: -1px;
+}
+
+.educationTitle {
+
+}
+
+.educationLocation {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .educationDate {
+        display: none;
+    }
+}

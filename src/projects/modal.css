@@ -1,0 +1,57 @@
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(230,230,230,0.85);
+    z-index: 10;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    background: white;
+    display: flex;
+    margin: 25px auto;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.image {
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #CCC;
+}
+
+.image > img {
+    width: 500px;
+    min-height: 400px;
+    filter: grayscale(70%);
+    opacity: 0.9;
+}
+
+.description {
+    margin: 20px 20px 10px 20px;
+    flex: 1;
+}
+
+@media screen and (max-width: 550px) {
+    .container {
+        margin: 25px;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+    }
+
+    .image > img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "allowJs": false,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "declaration": false,
+    "jsx": "react",
+    "module": "commonjs",
+    "target": "es6"
+  },
+  "include": ["src/index.tsx"],
+  "files": ["src/global.d.ts"]
+}

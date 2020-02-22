@@ -1,0 +1,48 @@
+
+.resume {
+    display: flex;
+    margin: 60px auto 0px auto;
+    max-width: 1200px;
+}
+
+.resume h2 {
+    margin-bottom: 10px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 40px;
+}
+
+.column + .column {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    .resume {
+        margin: 60px 100px 0px 100px;
+    }
+
+    .column + .column {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .resume {
+        margin: 60px 50px 0px 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .resume {
+        flex-direction: column;
+        margin: 30px 25px 0px 25px;
+    }
+
+    .column {
+        margin: 0;
+    }
+}

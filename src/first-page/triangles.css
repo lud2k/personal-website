@@ -1,0 +1,14 @@
+
+.triangles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.triangle {
+    stroke: rgba(0,0,0,0.15);
+    stroke-width: 1px;
+}

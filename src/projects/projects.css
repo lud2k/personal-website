@@ -1,0 +1,110 @@
+
+.projects {
+    margin: 30px auto 80px auto;
+    max-width: 1200px;
+}
+
+.projects > h2 {
+    margin-bottom: 10px;
+}
+
+.projects > h3 {
+    padding: 0;
+    margin: 0px 0 0 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    display: flex;
+    margin: 8px 0;
+    width: 32%;
+    position: relative;
+    cursor: pointer;
+}
+
+.image {
+    flex-basis: 48px;
+    flex-shrink: 0;
+    width: 48px;
+    background: #f4f4f4;
+    height: 48px;
+    margin-right: 8px;
+    overflow: hidden;
+}
+
+.image > img {
+    width: 200px;
+    filter: grayscale(30%);
+    opacity: 0.6;
+}
+
+.project:hover > img {
+    opacity: 0.5;
+}
+
+.name {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    overflow: hidden;
+}
+
+.left > h3 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.summary {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 22px;
+    white-space: nowrap;
+}
+
+.year {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: white;
+}
+
+@media screen and (max-width: 1400px) {
+    .projects {
+        margin: 40px 100px 40px 100px;
+    }
+
+    .project {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .projects {
+        margin: 40px 50px 40px 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .projects {
+        margin: 0px 25px 40px 25px;
+    }
+
+    .project {
+        width: 100%;
+    }
+}

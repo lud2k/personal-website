@@ -1,0 +1,17 @@
+
+.bio {
+    margin-bottom: 30px;
+}
+
+.bioItem {
+
+}
+
+.bioItem a {
+    color: #444;
+    text-decoration: none;
+}
+
+.bioItem a:hover {
+    text-decoration: underline;
+}

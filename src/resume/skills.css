@@ -1,0 +1,160 @@
+
+.skillStar {
+    display: flex;
+    height: 30px;
+    width: 25%;
+}
+
+.skillStarName {
+}
+
+.star {
+    position: relative;
+    width: 23px;
+    height: 23px;
+    margin-right: 6px;
+}
+
+.starVal {
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.star svg {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 0;
+    left: 0;
+}
+
+.skills {
+    margin-bottom: 30px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h3 {
+    margin: 0;
+}
+
+.skillRow {
+    display: flex;
+    margin: 2px 0;
+}
+
+.skillName {
+    flex: 1;
+}
+
+.skillBar {
+    flex: 1;
+    border: 1px solid #444;
+    background: #fff;
+    height: 16px;
+    margin: 2px 0;
+    position: relative;
+}
+
+.skillBar:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0%;
+    background: rgba(167,190,211,0.33);
+}
+
+.skillBar[data-pct="10"]:after {
+    right: 90%;
+}
+
+.skillBar[data-pct="20"]:after {
+    right: 80%;
+}
+
+.skillBar[data-pct="30"]:after {
+    right: 70%;
+}
+
+.skillBar[data-pct="40"]:after {
+    right: 60%;
+}
+
+.skillBar[data-pct="50"]:after {
+    right: 50%;
+}
+
+.skillBar[data-pct="60"]:after {
+    right: 40%;
+}
+
+.skillBar[data-pct="70"]:after {
+    right: 30%;
+}
+
+.skillBar[data-pct="80"]:after {
+    right: 20%;
+}
+
+.skillBar[data-pct="90"]:after {
+    right: 10%;
+}
+
+.skillStarList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.skillList {
+    display: flex;
+}
+
+.skillListName {
+    transform: rotateZ(-45deg);
+    max-height: 40px;
+}
+
+.skillVBarName {
+    width: 40px;
+    height: 0px;
+    position: relative;
+}
+
+.skillVBarName span {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -65px;
+    width: 100px;
+    height: 30px;
+    text-align: right;
+    transform: rotateZ(-45deg);
+}
+
+.starRect {
+    fill: rgba(167,190,211,0.5);
+}
+
+.heartRect {
+    fill: rgba(255,202,175,0.5);
+}
+
+@media screen and (max-width: 1200px) {
+    .skillStar {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .skillStar {
+        width: 50%;
+    }
+}

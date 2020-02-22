@@ -1,0 +1,80 @@
+
+.introduction {
+    height: 48px;
+    line-height: 48px;
+    font-size: 32px;
+    color: #444;
+}
+
+.word {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.introductionChar {
+    position: absolute;
+    height: 48px;
+    line-height: 48px;
+    overflow: hidden;
+}
+
+.introductionCharsWrapper {
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.introductionCharsWrapper[data-first=true] {
+    text-transform: uppercase;
+}
+
+.introductionChars {
+    position: relative;
+    transition: top ease-in-out 0.5s;
+}
+
+.engineer {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 40px;
+}
+
+.welcome {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -80px;
+    text-align: center;
+}
+
+.name {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.firstName {
+    color: #000;
+}
+
+.lastName {
+    margin-left: 10px;
+    color: rgba(61,64,91,1);
+}
+
+@media screen and (max-width: 550px) {
+    .name {
+        font-size: 48px;
+    }
+
+    .introduction {
+        font-size: 24px;
+    }
+
+    .engineer {
+        margin-right: 60px;
+    }
+}

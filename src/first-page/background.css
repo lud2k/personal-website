@@ -1,0 +1,29 @@
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    color: rgba(200,200,200,0.25);
+    overflow: hidden;
+}
+
+.line {
+    position: relative;
+    width: 120%;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    text-wrap: none;
+    overflow: hidden;
+}
+
+.line:nth-child(2n) {
+    left: -30px
+}
+
+.line:nth-child(3n) {
+    left: -60px
+}
