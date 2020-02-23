@@ -1,23 +1,28 @@
 import * as React from 'react'
 import * as styles from './projects.css'
 import ScreenToasterImage from '../images/screentoaster.jpg'
-import ColibriImage from '../images/colibri.png'
-import KikinChromeImage from '../images/kikin-chrome.png'
+import ColibriImage from '../images/colibri.jpg'
+import KikinChromeImage from '../images/kikin-chrome.jpg'
 import ScreenJellyImage from '../images/screenjelly.jpg'
-import KikinAndroidImage from '../images/kikin-android-tablet2.png'
-import KnewtonAltaImage from '../images/knewton-alta.png'
-import KnewtonLightImage from '../images/knewton-light.png'
-import KnewtonProfileImage from '../images/knewton-profile.png'
-import CodeReviewStatsImage from '../images/code-review-stats.png'
-import GameStatsImage from '../images/game-stats.png'
-import RilaImage from '../images/rila.png'
+import KikinAndroidImage from '../images/kikin-android-tablet2.jpg'
+import KnewtonAltaImage from '../images/knewton-alta.jpg'
+import KnewtonLightImage from '../images/knewton-light.jpg'
+import KnewtonProfileImage from '../images/knewton-profile.jpg'
+import CodeReviewStatsImage from '../images/code-review-stats.jpg'
+import GameStatsImage from '../images/game-stats.jpg'
+import RilaImage from '../images/rila.jpg'
 import Chat3dImage from '../images/chat-3d.jpg'
 import { Modal } from './modal'
 
 export class Project extends React.Component<
   {
     name: string
-    img: string
+    img: {
+      src: string
+      x: number
+      y: number
+      s: number
+    }
     tags: string[]
     year: number
     summary: string
@@ -52,7 +57,7 @@ export class Project extends React.Component<
     return (
       <div className={styles.project} onClick={this.onClick}>
         <div className={styles.image}>
-          <img src={img} style={{ filter: `grayscale(${gray}%)` }} />
+          <img src={img.src} style={{ filter: `grayscale(${gray}%)`, top: -img.y, left: -img.x, width: img.s }} />
         </div>
         <div className={styles.left}>
           <h3>
@@ -60,7 +65,7 @@ export class Project extends React.Component<
           </h3>
           <div className={styles.summary}>{summary}</div>
         </div>
-        <Modal img={img} visible={active} name={name} year={year} onClickClose={this.onClickClose}>
+        <Modal img={img.src} visible={active} name={name} year={year} onClickClose={this.onClickClose}>
           {children}
         </Modal>
       </div>
@@ -77,7 +82,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
         <div className={styles.list}>
           <Project
             name="Knewton Alta"
-            img={KnewtonAltaImage}
+            img={{ src: KnewtonAltaImage, x: 24, y: 10, s: 200 }}
             tags={['React', 'GraphQL']}
             gray={30}
             year={2017}
@@ -100,7 +105,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="Knewton Light"
-            img={KnewtonLightImage}
+            img={{ src: KnewtonLightImage, x: 5, y: 0, s: 200 }}
             tags={['AngularJS', 'JAX-RX']}
             gray={30}
             year={2015}
@@ -118,7 +123,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="Knewton Profile"
-            img={KnewtonProfileImage}
+            img={{ src: KnewtonProfileImage, x: 0, y: 0, s: 200 }}
             tags={['jQuery', 'DropWizard']}
             gray={30}
             year={2014}
@@ -136,7 +141,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="Colibri iOS"
-            img={ColibriImage}
+            img={{ src: ColibriImage, x: 20, y: 40, s: 150 }}
             tags={['Objective C', 'iOS Universal']}
             gray={30}
             year={2012}
@@ -154,7 +159,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="Kikin Android"
-            img={KikinAndroidImage}
+            img={{ src: KikinAndroidImage, x: 80, y: 0, s: 140 }}
             tags={['Android', 'Java', 'C++']}
             gray={30}
             year={2011}
@@ -173,7 +178,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="Kikin Chrome"
-            img={KikinChromeImage}
+            img={{ src: KikinChromeImage, x: 110, y: 0, s: 160 }}
             tags={['Chrome Extension', 'JavaScript']}
             gray={30}
             year={2013}
@@ -187,7 +192,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="ScreenJelly"
-            img={ScreenJellyImage}
+            img={{ src: ScreenJellyImage, x: 30, y: 0, s: 300 }}
             tags={['jQuery', 'PHP', 'MySQL']}
             gray={30}
             year={2009}
@@ -205,7 +210,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="ScreenToaster"
-            img={ScreenToasterImage}
+            img={{ src: ScreenToasterImage, x: 0, y: 0, s: 200 }}
             tags={['jQuery', 'PHP', 'MySQL']}
             gray={60}
             year={2008}
@@ -223,7 +228,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="Rila"
-            img={RilaImage}
+            img={{ src: RilaImage, x: 0, y: 0, s: 200 }}
             tags={['jQuery', 'PHP', 'MySQL']}
             gray={60}
             year={2007}
@@ -244,7 +249,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
         <div className={styles.list}>
           <Project
             name="Code Review Stats"
-            img={CodeReviewStatsImage}
+            img={{ src: CodeReviewStatsImage, x: 30, y: 0, s: 200 }}
             tags={['React', 'Gerrit']}
             gray={40}
             year={2018}
@@ -262,7 +267,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="Game Stats"
-            img={GameStatsImage}
+            img={{ src: GameStatsImage, x: 30, y: 0, s: 200 }}
             tags={['React', 'Google Sheets']}
             gray={40}
             year={2017}
@@ -281,7 +286,7 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
           </Project>
           <Project
             name="Chat 3D"
-            img={Chat3dImage}
+            img={{ src: Chat3dImage, x: 50, y: 20, s: 130 }}
             tags={['OpenGL', 'C++']}
             gray={30}
             year={2008}

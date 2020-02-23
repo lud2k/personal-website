@@ -21,7 +21,6 @@
 
 .image {
     width: 500px;
-    height: 400px;
     overflow: hidden;
     position: relative;
     border-bottom: 1px solid #CCC;
@@ -29,7 +28,6 @@
 
 .image > img {
     width: 500px;
-    min-height: 400px;
     filter: grayscale(70%);
     opacity: 0.9;
 }

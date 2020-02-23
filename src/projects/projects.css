@@ -39,7 +39,7 @@
 }
 
 .image > img {
-    width: 200px;
+    position: relative;
     filter: grayscale(30%);
     opacity: 0.6;
 }
