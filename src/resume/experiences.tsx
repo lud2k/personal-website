@@ -29,13 +29,18 @@ export class Experiences extends React.Component {
         <Experience
           name="Wiley"
           date="2019"
-          title="Team Leader / Senior Software Engineer"
+          title="Lead Software Engineer"
           location="New Jersey"
         >
           <ul>
             <li>Lead a team. Organized sprints, 1:1s, Roadmap planning.</li>
-            <li>Helped with migration to Kubernetes.</li>
-            <li>Continued work from Knewton.</li>
+            <li>Worked on a complex frontend web app (React, Redux, GraphQL, TypeScript).</li>
+            <li>Contributed to many backend services (Java, Python, NodeJS).</li>
+            <li>Built tools and libraries to simplify our codebase and processes.</li>
+            <li>
+              Supported a complex architecture of micro services (Kubernetes, Docker, AWS,
+              MySQL, PostgreSQL, Cassandra, Kafka, Vault, S3, Eureka, ..).
+            </li>
           </ul>
         </Experience>
         <Experience

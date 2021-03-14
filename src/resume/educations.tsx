@@ -1,4 +1,5 @@
 import * as React from 'react'
+import classnames from 'classnames'
 import * as styles from './educations.css'
 
 class Education extends React.Component<{
@@ -20,10 +21,11 @@ class Education extends React.Component<{
   }
 }
 
-export class Educations extends React.Component {
+export class Educations extends React.Component<{ className: string }> {
   render() {
+    const { className } = this.props
     return (
-      <div className={styles.educations}>
+      <div className={classnames(styles.educations, className)}>
         <h2>Education</h2>
         <Education
           name="Efrei"

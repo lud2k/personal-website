@@ -168,7 +168,7 @@ export class Skills extends React.Component {
           <h3>Infrastructure</h3>
           <div className={styles.skillStarList}>
             <SkillStar name="Marathon" love={true} know={5} />
-            <SkillStar name="Kubernetes" love={true} know={2} />
+            <SkillStar name="Kubernetes" love={true} know={5} />
             <SkillStar name="Docker" love={true} know={4} />
             <SkillStar name="S3" love={false} know={5} />
             <SkillStar name="CloudFront" love={false} know={5} />

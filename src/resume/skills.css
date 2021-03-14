@@ -158,3 +158,29 @@
         width: 50%;
     }
 }
+
+@media print {
+    .skillStarList {
+        display: block;
+    }
+
+    .skillName,
+    .skillRow,
+    .skillStarName,
+    .skillStar {
+        display: inline;
+        width: auto;
+    }
+
+    .skillRow + .skillRow::before,
+    .skillStar + .skillStar::before {
+      display: inline;
+      width: auto;
+      content: ', ';
+    }
+
+    .skillBar,
+    .star {
+        display: none;
+    }
+}

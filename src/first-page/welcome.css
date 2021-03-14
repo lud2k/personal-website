@@ -78,3 +78,21 @@
         margin-right: 60px;
     }
 }
+
+@media print {
+    .welcome {
+      position: static;
+      margin-top: 0;
+    }
+
+    .name {
+        font-size: 48px;
+        line-height: 56px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid rgba(61,64,91,1);
+    }
+
+    .introduction {
+        display: none;
+    }
+}

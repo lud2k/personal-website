@@ -108,3 +108,9 @@
         width: 100%;
     }
 }
+
+@media print {
+    .projects {
+        display: none;
+    }
+}

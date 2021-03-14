@@ -25,3 +25,18 @@
     text-align: center;
     color: #444;
 }
+
+@media print {
+    .firstPage {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        max-height: 80px;
+        padding-bottom: 0;
+    }
+
+    .downArrow,
+    .cut {
+        display: none;
+    }
+}

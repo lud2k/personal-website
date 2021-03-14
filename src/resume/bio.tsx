@@ -1,6 +1,8 @@
 import * as React from 'react'
 import * as styles from './bio.css'
-
+import * as globalStyles from './global.css'
+import classnames from 'classnames'
+ 
 export class Bio extends React.Component {
   render() {
     return (
@@ -10,7 +12,7 @@ export class Bio extends React.Component {
           <b>Nationality</b>: France, born in the caribbean
         </div>
         <div className={styles.bioItem}>
-          <b>Home</b>: Live in New York City
+          <b>Home</b>: New York City
         </div>
         <div className={styles.bioItem}>
           <b>Work</b>: USA (Green Card), France and Taiwan
@@ -18,7 +20,7 @@ export class Bio extends React.Component {
         <div className={styles.bioItem}>
           <b>Email</b>: ludovic.cabre@gmail.com
         </div>
-        <div className={styles.bioItem}>
+        <div className={classnames(styles.bioItem, globalStyles.hidePrint)}>
           <b>Links</b>:{' '}
           <a href="https://github.com/lud2k" target="_blank">
             GitHub

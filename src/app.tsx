@@ -10,9 +10,6 @@ export class App extends React.Component {
       <div className={styles.app}>
         <FirstPage />
         <Resume />
-        <div style={{ display: 'none' }}>
-          <Projects />
-        </div>
         <Projects />
       </div>
     )

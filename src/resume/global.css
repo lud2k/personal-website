@@ -1,0 +1,14 @@
+
+.onlyPrintBlock {
+    display: none;
+}
+
+@media print {
+    .hidePrint {
+        display: none;
+    }
+
+    .onlyPrintBlock {
+        display: block;
+    }
+}

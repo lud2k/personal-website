@@ -4,7 +4,7 @@ import * as styles from './welcome.css'
 export class Introduction extends React.Component<{}, { wordIdx: number }> {
   interval: any
 
-  static WORDS = ['software', 'frontend', '  mobile', ' backend', '  system', '   ninja']
+  static WORDS = ['software', 'frontend', '  mobile', ' backend', '  system']
 
   constructor(props) {
     super(props)

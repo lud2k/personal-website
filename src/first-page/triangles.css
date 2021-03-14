@@ -12,3 +12,9 @@
     stroke: rgba(0,0,0,0.15);
     stroke-width: 1px;
 }
+
+@media print {
+    .triangles {
+        display: none;
+    }
+}

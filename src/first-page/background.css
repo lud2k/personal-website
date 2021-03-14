@@ -27,3 +27,9 @@
 .line:nth-child(3n) {
     left: -60px
 }
+
+@media print {
+    .background {
+        display: none;
+    }
+}

@@ -46,3 +46,25 @@
         margin: 0;
     }
 }
+
+@media print {
+    .resume {
+        margin-top: 0;
+    }
+
+    .column:first-child {
+        width: 100%;
+    }
+
+    .column:last-child {
+        max-width: 275px;
+    }
+
+    .column {
+      margin-right: 20px;
+    }
+
+    .column + .column {
+        margin-left: 0;
+    }
+}
