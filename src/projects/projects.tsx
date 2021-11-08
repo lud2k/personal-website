@@ -12,6 +12,7 @@ import CodeReviewStatsImage from '../images/code-review-stats.jpg'
 import GameStatsImage from '../images/game-stats.jpg'
 import RilaImage from '../images/rila.jpg'
 import Chat3dImage from '../images/chat-3d.jpg'
+import ExamAceImage from '../images/exam-ace.jpg'
 import { Modal } from './modal'
 
 export class Project extends React.Component<
@@ -80,6 +81,23 @@ export class Projects extends React.Component<{}, { selection: number | null }> 
         <h2>Projects</h2>
         <h3>Work</h3>
         <div className={styles.list}>
+          <Project
+              name="ExamAce"
+              img={{ src: ExamAceImage, x: 0, y: 12, s: 100 }}
+              tags={['React', 'GraphQL', 'TypeScript']}
+              gray={30}
+              year={2021}
+              summary="Mobile application built using React"
+          >
+            <p>
+              ExamAce is a mobile web application allowing students to practice for their upcoming exams.
+            </p>
+            <p>
+              The application was built using React, TypeScript, MaterialUI and
+              GraphQL for the frontend. It was powered by NodeJS and Java
+              backends (Jersey, Jackson, Jdbi, PostgreSQL, Liquibase, ...).
+            </p>
+          </Project>
           <Project
             name="Knewton Alta"
             img={{ src: KnewtonAltaImage, x: 24, y: 10, s: 200 }}

@@ -48,6 +48,10 @@
 }
 
 @media print {
+    .resume h2 {
+        margin-bottom: 0;
+    }
+
     .resume {
         margin-top: 0;
     }

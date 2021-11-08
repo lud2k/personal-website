@@ -1,11 +1,13 @@
 import * as React from 'react'
+import classnames from 'classnames'
 import * as styles from './skills.css'
+import * as globalStyles from './global.css'
 
-class SkillRow extends React.Component<{ name: string; val: number }> {
+class SkillRow extends React.Component<{ name: string; val: number, hidePrint?: boolean }> {
   render() {
-    const { name, val } = this.props
+    const { name, val, hidePrint } = this.props
     return (
-      <div className={styles.skillRow}>
+      <div className={classnames(styles.skillRow, hidePrint && globalStyles.hidePrint )}>
         <div className={styles.skillName}>{name}</div>
         <div className={styles.skillBar} data-pct={val * 10} />
       </div>
@@ -122,7 +124,7 @@ export class Skills extends React.Component {
           <h3>Language</h3>
           <SkillRow name="French" val={10} />
           <SkillRow name="English" val={10} />
-          <SkillRow name="Mandarin" val={1} />
+          <SkillRow name="Mandarin" val={1} hidePrint={true} />
         </div>
         <div className={styles.skill}>
           <h3>Programming</h3>
@@ -141,6 +143,7 @@ export class Skills extends React.Component {
             <SkillStar name="Angular" love={false} know={5} />
             <SkillStar name="Redux" love={true} know={5} />
             <SkillStar name="GraphQL" love={true} know={5} />
+            <SkillStar name="MaterialUI" love={true} know={5} />
             <SkillStar name="ExpressJS" love={false} know={5} />
             <SkillStar name="Webpack" love={false} know={5} />
             <SkillStar name="TypeScript" love={true} know={5} />
@@ -154,14 +157,17 @@ export class Skills extends React.Component {
           <h3>Backend</h3>
           <div className={styles.skillStarList}>
             <SkillStar name="Jersey" love={true} know={5} />
+            <SkillStar name="Spring" love={true} know={3} />
             <SkillStar name="Thrift" love={false} know={5} />
             <SkillStar name="MySQL" love={false} know={5} />
             <SkillStar name="PostgreSQL" love={true} know={5} />
             <SkillStar name="Redis" love={false} know={5} />
             <SkillStar name="Cassandra" love={false} know={2} />
+            <SkillStar name="DynamoDB" love={false} know={2} />
             <SkillStar name="ElasticSearch" love={false} know={2} />
             <SkillStar name="SQS" love={false} know={5} />
-            <SkillStar name="Kafka" love={false} know={1} />
+            <SkillStar name="Kafka" love={false} know={2.5} />
+            <SkillStar name="Kinesis" love={false} know={2} />
           </div>
         </div>
         <div className={styles.skill}>
@@ -180,16 +186,17 @@ export class Skills extends React.Component {
             <SkillStar name="Eureka" love={false} know={5} />
             <SkillStar name="Consul" love={false} know={4} />
             <SkillStar name="Vault" love={false} know={4} />
-            <SkillStar name="Splunk" love={false} know={5} />
+            <SkillStar name="Splunk" love={true} know={5} />
             <SkillStar name="Grafana" love={true} know={5} />
+            <SkillStar name="Prometheus" love={true} know={5} />
           </div>
         </div>
         <div className={styles.skill}>
           <h3>Other</h3>
           <div className={styles.skillStarList}>
             <SkillStar name="OpenGL" love={false} know={1} />
-            <SkillStar name="WebGL" love={true} know={1} />
-            <SkillStar name="WebAssembly" love={false} know={1} />
+            <SkillStar name="WebGL" love={true} know={2} />
+            <SkillStar name="WebAssembly" love={true} know={2} />
             <SkillStar name="Ionic" love={false} know={1} />
           </div>
         </div>

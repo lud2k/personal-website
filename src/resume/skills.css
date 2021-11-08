@@ -183,4 +183,13 @@
     .star {
         display: none;
     }
+
+    .skills {
+        margin-bottom: 15px;
+    }
+
+    .skill {
+        margin-bottom: 10px;
+    }
+
 }

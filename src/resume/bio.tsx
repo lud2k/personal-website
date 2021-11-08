@@ -9,7 +9,7 @@ export class Bio extends React.Component {
       <div className={styles.bio}>
         <h2>Bio</h2>
         <div className={styles.bioItem}>
-          <b>Nationality</b>: France, born in the caribbean
+          <b>Nationality</b>: France
         </div>
         <div className={styles.bioItem}>
           <b>Home</b>: New York City

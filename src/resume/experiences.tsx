@@ -34,12 +34,12 @@ export class Experiences extends React.Component {
         >
           <ul>
             <li>Lead a team. Organized sprints, 1:1s, Roadmap planning.</li>
-            <li>Worked on a complex frontend web app (React, Redux, GraphQL, TypeScript).</li>
+            <li>Worked on complex frontend web apps (React, Redux, GraphQL, TypeScript, Material UI).</li>
             <li>Contributed to many backend services (Java, Python, NodeJS).</li>
             <li>Built tools and libraries to simplify our codebase and processes.</li>
             <li>
               Supported a complex architecture of micro services (Kubernetes, Docker, AWS,
-              MySQL, PostgreSQL, Cassandra, Kafka, Vault, S3, Eureka, ..).
+              MySQL, PostgreSQL, DynamoDB, Kinesis, S3, Eureka, Prometheus, ..).
             </li>
           </ul>
         </Experience>
@@ -51,11 +51,11 @@ export class Experiences extends React.Component {
         >
           <ul>
             <li>Lead a team. Organized sprints, 1:1s, Roadmap planning.</li>
-            <li>Worked on a complex frontend web app (React, Redux, GraphQL, TypeScript).</li>
+            <li>Worked on complex frontend web apps (React, Redux, GraphQL, TypeScript).</li>
             <li>Contributed to many backend services (Java, Python, NodeJS).</li>
             <li>
               Supported a complex architecture of micro services (Mesos, Marathon, Docker, AWS,
-              MySQL, PostgreSQL, Cassandra, Kafka, Vault, S3, Eureka, ..).
+              MySQL, PostgreSQL, Cassandra, Kafka, Vault, S3, Eureka, Grafana, ..).
             </li>
           </ul>
         </Experience>

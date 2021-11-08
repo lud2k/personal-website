@@ -5,7 +5,7 @@
 
 @media print {
     .hidePrint {
-        display: none;
+        display: none !important;
     }
 
     .onlyPrintBlock {
