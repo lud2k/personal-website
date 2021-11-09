@@ -28,7 +28,7 @@ export class Experiences extends React.Component {
         <h2>Work Experience</h2>
         <Experience
           name="Wiley"
-          date="2019"
+          date="2019 to now"
           title="Lead Software Engineer"
           location="New Jersey"
         >
@@ -45,7 +45,7 @@ export class Experiences extends React.Component {
         </Experience>
         <Experience
           name="Knewton"
-          date="2014"
+          date="2014 to 2019"
           title="Senior Software Engineer"
           location="New York"
         >
@@ -59,7 +59,7 @@ export class Experiences extends React.Component {
             </li>
           </ul>
         </Experience>
-        <Experience name="Kikin" date="2010" title="Software Engineer" location="New York">
+        <Experience name="Kikin" date="2010 to 2014" title="Software Engineer" location="New York">
           <ul>
             <li>Created two apps for iPad/iPhone (Objective C).</li>
             <li>Modified Android's source code (Java). Shipped on 200K+ devices.</li>
@@ -68,7 +68,7 @@ export class Experiences extends React.Component {
         </Experience>
         <Experience
           name="Veodia"
-          date="2009"
+          date="2009 to 2010"
           title="Software Engineer"
           location="San Francisco"
         >
@@ -80,13 +80,13 @@ export class Experiences extends React.Component {
             </li>
           </ul>
         </Experience>
-        <Experience name="ScreenToaster" date="2008" title="Web 2.0 Engineer" location="Paris">
+        <Experience name="ScreenToaster" date="2008 to 2009" title="Web 2.0 Engineer" location="Paris">
           <ul>
             <li>Worked on the website's frontend and backend (PHP).</li>
             <li>Created an online screen recorder using VNCServer and Ffmpeg (Java/C++).</li>
           </ul>
         </Experience>
-        <Experience name="Infotel" date="2007" title="Consultant" location="Paris">
+        <Experience name="Infotel" date="2007 to 2008" title="Consultant" location="Paris">
           <ul>
             <li>Microsoft .NET Consultant (C# / .Net Framework / ASP), Authenticode signing, Vista compatibility.</li>
             <li>Development of two web applications using J2EE with Struts Framework and a SOAP (WSDL) service using AXIS.</li>
