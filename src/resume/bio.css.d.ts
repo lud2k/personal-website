@@ -2,6 +2,7 @@ declare namespace BioCssModule {
   export interface IBioCss {
     bio: string
     bioItem: string
+    special: string
   }
 }
 

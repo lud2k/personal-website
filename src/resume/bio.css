@@ -16,6 +16,10 @@
     text-decoration: underline;
 }
 
+.special {
+    display: none;
+}
+
 @media print {
     .bio {
         margin-bottom: 15px;
